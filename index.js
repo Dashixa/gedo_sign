@@ -106,7 +106,7 @@ document.querySelector('.generateBtn').addEventListener('click', function () {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `Подпись.html`;
+    a.download = `${name}.html`;
 
     document.body.appendChild(a);
     a.click();
